@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://thelia.net/schema/dic/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://thelia.net/schema/dic/config http://thelia.net/schema/dic/config/thelia-1.0.xsd">
+  <services>
+    <service id="full_calendar.smarty_plugin" class="FullCalendar\Smarty\Plugins\Calendar">
+      <tag name="thelia.parser.register_plugin"/>
+    </service>
+  </services>
+  <hooks>
+    <hook id="fullcalendar.hook" class="FullCalendar\Hook\CalendarHook" scope="request">
+      <argument type="service" id="full_calendar.smarty_plugin"/>
+      <tag name="hook.event_listener" event="main.stylesheet" type="front" active="1"/>
+      <tag name="hook.event_listener" event="main.javascript-initialization" type="front" active="1"/>
+    </hook>
+  </hooks>
+  <forms>
+    <form name="fullcalendar.configuration" class="FullCalendar\Form\FullCalendarConfigForm"/>
+  </forms>
+  <loops/>
+</config>

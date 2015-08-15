@@ -1,0 +1,4 @@
+config:
+  enable_prevent_scroll:
+    type: checkbox
+    help: "If this is checked, all the calendars won't manager their size themselves"
