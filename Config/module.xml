@@ -4,10 +4,10 @@
         xsi:schemaLocation="http://thelia.net/schema/dic/module http://thelia.net/schema/dic/module/module-2_2.xsd">
     <fullnamespace>FullCalendar\FullCalendar</fullnamespace>
     <descriptive locale="en_US">
-        <title>Ajoute l'intégration de Fullcalendar</title>
+        <title>Integrates Fullcalendar</title>
     </descriptive>
     <descriptive locale="fr_FR">
-        <title>Integrates Fullcalendar</title>
+        <title>Ajoute l'intégration de Fullcalendar</title>
     </descriptive>
     <languages>
         <language>en_US</language>
